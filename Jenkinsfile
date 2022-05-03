@@ -11,10 +11,10 @@ try {
                 sh 'sudo npm install -g react-native-cli'
                 sh 'npm install'
                 sh 'react-native link'
-                sh 'export JAVA_HOME=C:/Program Files/Java/jdk1.8.0_221'
-                sh 'export JRE_HOME=C:/Program Files/Java/jdk1.8.0_221/jre'
-                sh 'export PATH=$PATH:C:/Program Files/Java/jdk1.8.0_221/bin:/Program Files/Java/jdk1.8.0_221/jre/bin'
-                sh 'echo $JAVA_HOME'
+               echo sh 'export JAVA_HOME=C:/Program Files/Java/jdk1.8.0_221'
+                echo sh 'export JRE_HOME=C:/Program Files/Java/jdk1.8.0_221/jre'
+                echo sh 'export PATH=$PATH:C:/Program Files/Java/jdk1.8.0_221/bin:/Program Files/Java/jdk1.8.0_221/jre/bin'
+                echo sh 'echo $JAVA_HOME'
         }
         
         stage('Clean Build') {
