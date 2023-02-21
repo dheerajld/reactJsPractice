@@ -21,5 +21,3 @@ Student.propTypes = {
   name: PropTypes.string,
   age: PropTypes.string,
 };
-
-console.log(Student);

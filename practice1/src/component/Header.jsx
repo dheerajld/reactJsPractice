@@ -1,11 +1,9 @@
 const Header = () => {
-  let name = "Header Component";
+  let name = "Movies";
   return (
     <div className="header">
       <h1>{name}</h1>
-      <span style={{ color: "black  " }}>
-        Block of code and reusable the react Component
-      </span>
+      <span style={{ color: "black  " }}></span>
     </div>
   );
 };
