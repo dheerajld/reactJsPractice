@@ -1,5 +1,5 @@
 const Header = () => {
-  let name = "Movies";
+  let name = "React Hooks";
   return (
     <div className="header">
       <h1>{name}</h1>
