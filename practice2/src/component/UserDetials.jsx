@@ -6,14 +6,17 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { useState } from "react";
 
 export const UserDetials = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [form, setForm] = useState({});
+  //   const [email, setEmail] = useState("");
+
   const [data, setData] = useState([]);
 
-  const addDetials = () => {
-    setData([...data, { name, email }]);
-    setName("");
-    setEmail("");
+  const addDetials = (e) => {
+    setData([...data, { name: form.name, email: form.email }]);
+    // setName("");
+    // setEmail("");
+    // setForm();
+    e.preventDefault();
   };
 
   const removeDetials = (index) => {
@@ -28,18 +31,20 @@ export const UserDetials = () => {
         <div className="input">
           <TextField
             id="outlined-basic"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={form.name}
+            onChange={(e) => setForm({ ...form, name: e.target.value })}
             label="name"
             variant="outlined"
+            required
           />{" "}
           &nbsp;&nbsp;
           <TextField
             id="outlined-basic"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={form.email}
+            onChange={(e) => setForm({ ...form, email: e.target.value })}
             label="email"
             variant="outlined"
+            required
           />
           &nbsp;&nbsp;
           <Button onClick={addDetials} variant="contained" color="success">
