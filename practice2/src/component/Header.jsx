@@ -1,9 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
-  let name = "Users Details";
   return (
     <div className="header">
-      <h1>{name}</h1>
-      <span style={{ color: "black  " }}></span>
+      <nav style={{ margin: 10 }}>
+        <Link to="/" style={{ padding: 5 }}>
+          Employe Details
+        </Link>
+        <Link to="/user" style={{ padding: 5 }}>
+          User Detials
+        </Link>
+        <Link to="/about" style={{ padding: 5 }}>
+          About
+        </Link>
+      </nav>
     </div>
   );
 };

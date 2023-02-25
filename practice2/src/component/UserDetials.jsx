@@ -5,7 +5,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { useState } from "react";
 
-export const UserDetials = () => {
+const UserDetials = () => {
   const [form, setForm] = useState({});
   //   const [email, setEmail] = useState("");
 
@@ -87,3 +87,5 @@ export const UserDetials = () => {
     </>
   );
 };
+
+export default UserDetials;
