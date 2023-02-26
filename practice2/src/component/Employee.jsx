@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
+import {  NavLink } from "react-router-dom";
 
 export const Employee = () => {
   const [state, setState] = useState(5);
@@ -44,8 +45,11 @@ export const Employee = () => {
           {data.map((user, index) => {
             return (
               <tbody key={index}>
+                
+             
+                
                 <tr>
-                  <td>{user.id}</td>
+                  <NavLink Link to={`/about/userDetail?id=${user.id}`}><td>{user.id}</td></NavLink>
                   <td>{user.firstName}</td>
                   <td>{user.lastName}</td>
                   <td>{user.email}</td>

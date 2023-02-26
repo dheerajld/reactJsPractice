@@ -1,20 +1,37 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="header">
-      <nav style={{ margin: 10 }}>
-        <Link to="/" style={{ padding: 5 }}>
-          Employe Details
-        </Link>
-        <Link to="/user" style={{ padding: 5 }}>
-          User Detials
-        </Link>
-        <Link to="/about" style={{ padding: 5 }}>
-          About
-        </Link>
-      </nav>
-    </div>
+    <>
+    <div className="navlink">
+    <div style={{ margin: '10px' }}>
+    <NavLink to="/" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+        Home
+    </NavLink>
+</div>
+<div style={{ margin: '10px' }}>
+    <NavLink to="/user" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+        User
+    </NavLink>
+</div>
+<div style={{ margin: '10px' }}>
+    <NavLink to="/courses" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+        Courses
+    </NavLink>
+</div>
+<div style={{ margin: '10px' }}>
+    <NavLink to="/about" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+        About
+    </NavLink>
+</div>
+
+</div>
+
+</>
   );
 };
 export default Header;
