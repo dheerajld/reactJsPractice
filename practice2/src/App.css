@@ -168,7 +168,7 @@ and Course component course-nav div */
     transition: 0.3s;
     width: 40%;
     display: flex;
-    margin-left: 500px;
+    margin-left: 400px;
   }
   
   .card:hover {
