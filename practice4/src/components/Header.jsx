@@ -1,7 +1,7 @@
 const Header = () => {
-  let name = "UseReducer";
+  let name = "Custom Hooks";
   return (
-    <div className="header">
+    <div className="App-header">
       <h1>{name}</h1>
     </div>
   );
