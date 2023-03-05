@@ -1,5 +1,5 @@
 const Header = () => {
-  let name = "Custom Hooks";
+  let name = "React Function Component";
   return (
     <div className="App-header">
       <h1>{name}</h1>
